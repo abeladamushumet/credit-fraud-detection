@@ -205,3 +205,59 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# === Python cache files ===
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# === Jupyter Notebook checkpoints ===
+.ipynb_checkpoints/
+
+# === Environment and dependencies ===
+.env
+.venv/
+env/
+venv/
+*.env
+pip-log.txt
+
+# === IDE/editor config ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === System-specific ===
+.DS_Store
+Thumbs.db
+
+# === Large or intermediate datasets ===
+data/raw/*
+data/processed/*
+
+
+# data/raw/Fraud_Data.csv
+# data/raw/creditcard.csv
+# data/raw/IpAddress_to_Country.csv
+
+
+
+# === Models ===
+*.pkl
+*.joblib
+*.h5
+*.onnx
+
+
+
+# === Logs and temporary files ===
+*.log
+*.tmp
+*.bak
+
+# === OS-generated ===
+ehthumbs.db
+desktop.ini
