@@ -8,8 +8,6 @@ xgboost>=1.7.0
 lightgbm>=3.3.0  
 shap>=0.41.0  
 streamlit>=1.25.0  
-ipython>=8.0.0  
 ipaddress  # usually built-in for Python 3.3+  
-jupyterlab>=3.0.0  
 joblib>=1.2.0  
 plotly>=5.10.0  
