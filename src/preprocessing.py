@@ -22,7 +22,6 @@ def clean_fraud_data(fraud_df: pd.DataFrame) -> pd.DataFrame:
     fraud_df = fraud_df.dropna(subset=['class', 'ip_address', 'purchase_time', 'signup_time'])
     
     # Fill other missing values or choose strategy depending on features
-    # For example, fill missing 'browser' with 'unknown'
     fraud_df['browser'] = fraud_df['browser'].fillna('unknown')
     fraud_df['source'] = fraud_df['source'].fillna('unknown')
     fraud_df['sex'] = fraud_df['sex'].fillna('U')  # U for unknown
@@ -86,7 +85,7 @@ def clean_ip_country_data(ip_country_df: pd.DataFrame) -> pd.DataFrame:
     """
     ip_country_df.columns = ['lower_bound_ip_address', 'upper_bound_ip_address', 'country']
     
-    # If IP bounds are strings (e.g., dotted decimal), convert to int
+    # If IP bounds are strings  convert to int
     # Otherwise, ensure integer type
     if ip_country_df['lower_bound_ip_address'].dtype == 'O':  # Object/string type
         import ipaddress
